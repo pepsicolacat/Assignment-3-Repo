@@ -75,13 +75,15 @@ video {
 }
 
 .awards {
-    max-width: 700px;
+    max-width: 500px;
     position: relative;
+    margin: auto;
 }
 
 .awards img {
     width: 100%;
     height: auto;
+    margin-top: 20px;
 }
 
 p.nav-link {

@@ -14,9 +14,12 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #181818;
-    /* padding-top: 70px; */
 }
 
 h1.logo {
@@ -26,6 +29,10 @@ h1.logo {
 
 h1 {
     color: white;
+    font-family: "Libre Bodoni";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
 }
 
 /* h2.video {
@@ -41,7 +48,12 @@ h1 {
 
 h2 {
     color: #E1B114;
-    font-size: clamp(30px, 10vw, 100px);
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-weight: 480;
+    line-height: 0.1;
+    letter-spacing: 15px;
+    font-size: clamp(30px, 10vw, 80px);
 }
 
 h1.bio {
@@ -57,7 +69,12 @@ h1.bio {
     transform: translate(-50%, -50%);
     z-index: 100;
     line-height: 0.1;
+    font-family: "Libre Bodoni";
     font-size: 25px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1;
+    margin-top: 90px;
 }
 
 p {
@@ -86,12 +103,30 @@ video {
     margin-top: 20px;
 }
 
-p.nav-link {
+.arrow {
+    max-width: 30px;
+    position: relative;
+    margin: auto;
+    display: flex; 
+}
+
+.arrow img {
+    width: 100%;
+    height: auto;
+    margin-top: 180px;
+}
+
+.nav-link {
     padding: 0 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
+    font-family: "Libre Bodoni";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+
 }
 
 nav{
@@ -109,12 +144,59 @@ nav{
     display: flex;
     padding-right: 20px;
     align-items: center;
-
-    
 }
 
-.nav-button a {
-border: 1px solid white;
-height: fit-content;
-margin-right: 1rem;
+.nav-button a{
+    border: 1px solid white;
+    height: fit-content;
+    margin-right: 1rem;
+}
+
+/* gallery */
+
+.img-gallery {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+
+.img-gallery {
+    padding-left: 130px;
+    padding-right: 130px;
+    padding-top: 95px;
+    padding-bottom: 95px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 400px;
+}
+
+.img-gallery img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    grid-column: span 3;
+}
+
+
+
+@media screen and (max-width:600px){
+    .img-gallery {
+        padding: 50px;
+        margin: 0 auto;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: 400px;
+    }
+    
+    .img-gallery img{
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        grid-column: span 1;
+    }
 }

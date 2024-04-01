@@ -2,20 +2,34 @@
 <html>
     <head>
         <title>Wong Kar-Wai</title>
-
-        <script src="script.jpg"></script>
+        
+        <script src="script.js"></script>
         <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" href="lightbox.min.css">
     </head>
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
 <!-- the header or navigation bar -->
 <body>
     <section id="landing">
         <div class="video-text">
-            <h2>Wong Kar-Wai</h2>
+            <h2>WONG KAR-WAI</h2>
             <p>The king of memory, longing, and the passage of time</p>
             <div class="awards">
                 <img src="public/imgs/awards.png" alt="awards">
             </div>
-                
+            <a href="#work">
+            <div class="arrow">
+                <img src="public/imgs/arrow.png" alt="arrow">
+            </div>
+        </a>
         </div>
         <video muted autoplay loop style="pointer-events: none;">
             <source src="public/videos/landing-page.mp4" type="video/mp4">
@@ -24,9 +38,9 @@
 
         <nav>
             <h1 class="logo">W.</h1>
-            <!-- linking the paragraph to the About page -->
+<!-- linking the paragraph to the About page -->
     <div class="nav-button">
-            <a href="#work">
+        <a href="#work">
             <p class="nav-link">work</p>
         </a>
 
@@ -35,25 +49,60 @@
         </a>
     </div>
         </nav>
-        <!--
-        <img src="public/imgs/silly-billy-v0-i5qdyqwxbc9b1.webp" alt="silly cat">
-        <p>My first paragraph</p>
-        <p>My second paragraph</p>
-        -->
 
-
-        <!-- sections are deliberately making a new section, divs are for almost anything for containers -->
+        <!-- gallery container -->
         <section id="work">
+        <div class="img-gallery">
+            <div>
+                <a href="public/imgs/ITMFL-1.jpg" data-lightbox="ITMFL" data-title="In The Mood For Love (2000)"><img src="public/imgs/ITMFL-1.jpg" alt="" /></a>
+            </div>
+            <div>
+                <a href="public/imgs/ITMFL-2.jpg" data-lightbox="ITMFL" data-title="In The Mood For Love (2000)"><img src="public/imgs/ITMFL-2.jpg" alt="" /></a>
+            </div>
+            <div>
+                <a href="public/imgs/ITMFL-3.jpg" data-lightbox="ITMFL" data-title="In The Mood For Love (2000)"><img src="public/imgs/ITMFL-3.jpg" alt="" /></a>
+            </div>
+            <div>
+                <a href="public/imgs/CKE-1.jpeg" data-lightbox="ITMFL" data-title="Chungking Express (1994)"><img src="public/imgs/CKE-1.jpeg" alt="" /></a>
+            </div>
+            <div>
+                <a href="public/imgs/CKE-2.jpg" data-lightbox="ITMFL" data-title="Chungking Express (1994)"><img src="public/imgs/CKE-2.jpg" alt="" /></a>
+            </div>
+            <div>
+                <a href="public/imgs/CKE-3.jpg" data-lightbox="ITMFL" data-title="Chungking Express (1994)"><img src="public/imgs/CKE-3.jpg" alt="" /></a>
+            </div>
+            <div>
+                <a href="public/imgs/FA-1.jpg" data-lightbox="ITMFL" data-title="Fallen Angels (1995)"><img src="public/imgs/FA-1.jpg" alt="" /></a>
+            </div>
+            <div>
+                <a href="public/imgs/FA-2.jpg" data-lightbox="ITMFL" data-title="Fallen Angels (1995)"><img src="public/imgs/FA-2.jpg" alt="" /></a>
+            </div>
+            <div>
+                <a href="public/imgs/FA-3.jpg" data-lightbox="ITMFL" data-title="Fallen Angels (1995)"><img src="public/imgs/FA-3.jpg" alt="" /></a>
+            </div>
+            <div>
+                <a href="public/imgs/HT-1.jpg" data-lightbox="ITMFL" data-title="Happy Together (1997)"><img src="public/imgs/HT-1.jpg" alt="" /></a>
+            </div>
+            <div>
+                <a href="public/imgs/HT-2.jpg" data-lightbox="ITMFL" data-title="Happy Together (1997)"><img src="public/imgs/HT-2.jpg" alt="" /></a>
+            </div>
+            <div>
+                <a href="public/imgs/HT-3.jpg" data-lightbox="ITMFL" data-title="Happy Together (1997)"><img src="public/imgs/HT-3.jpg" alt="" /></a>
+            </div>
+        </div>
+    </section>
+        <!-- sections are deliberately making a new section, divs are for almost anything for containers -->
+        
             <h1>In The Mood For Love</h1>
-            <h1>Chungking Express</h3>
-            <h1>Fallen Angels</h4>
-            
-        </section>
+            <h1>Chungking Express</h1>
+            <h1>Fallen Angels</h1>
+
 
         <section id="about">
             <h1 class="bio">Wong Kar-Wai</h1>
             <p>Wong Kar-wai, born in Shanghai in 1958, is a renowned filmmaker known for his visually stunning films and unique storytelling. Starting as a screenwriter and assistant director, he made his directorial debut with "As Tears Go By" in 1988. His breakthrough came with "Days of Being Wild" (1990), followed by acclaimed works like "Chungking Express" (1994) and "In the Mood for Love" (2000). Wong's films explore themes of love, longing, and identity, earning him international recognition and establishing himself as a cinematic master.
             </p>
         </section>
+        <script src="lightbox-plus-jquery.min.js"></script>
     </body>
 </html>

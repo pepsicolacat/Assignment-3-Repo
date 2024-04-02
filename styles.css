@@ -14,7 +14,7 @@ body::-webkit-scrollbar {
     display: none;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -25,9 +25,6 @@ body {
 h1.logo {
     color: white;
     padding-left: 20px;
-}
-
-h1 {
     color: white;
     font-family: "Libre Bodoni";
     font-size: 32px;
@@ -123,13 +120,15 @@ video {
     justify-content: center;
     height: 100%;
     font-family: "Libre Bodoni";
-    font-size: 15px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
+    text-decoration: none;
+    color: white;
 
 }
 
-nav{
+nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -138,6 +137,7 @@ nav{
     background-color: rgba(24, 24, 24,.3);
     display: flex;
     justify-content: space-between;
+    z-index: 100;
 }
 
 .nav-button {
@@ -148,8 +148,16 @@ nav{
 
 .nav-button a{
     border: 1px solid white;
-    height: fit-content;
+    width: 60px;
+    height: 40px;
     margin-right: 1rem;
+}
+
+.nav-button a:hover {
+    color: black;
+    background-color: white;
+    transition-duration: 0.4s;
+    
 }
 
 /* gallery */
@@ -172,7 +180,7 @@ nav{
     grid-auto-rows: 400px;
 }
 
-.img-gallery img{
+.img-gallery img {
     display: block;
     width: 100%;
     height: 100%;
@@ -195,7 +203,7 @@ nav{
     grid-auto-flow: dense;
 }
 
-.films video{
+.films video {
     display: block;
     width: 100%;
     height: 100%;
@@ -203,9 +211,55 @@ nav{
     opacity: 100%;
 }
 
+.film-text {
+    z-index: 100;
+    position: absolute;
+    color: white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.ITMFL {
+    font-family: "Libre Bodoni";
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: left;
+    position: absolute;
+    margin-left: 130px;
+    width: 460px;
+    height: 190px;
+    padding-top: 80px;
+}
+
+.CKE {
+    font-family: "Roboto";
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 300;
+    text-align: right;
+    position: absolute;
+    margin-left: 780px;
+    width: 460px;
+    height: 190px;
+    padding-top: 530px;
+}
+
+.FA {
+    font-family: "Oswald";
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 300;
+    text-align: left;
+    position: absolute;
+    margin-left: 130px;
+    width: 280px;
+    height: 190px;
+    padding-top: 970px;
+}
+
 @media screen and (max-width:600px){
     .img-gallery {
-        padding: 50px;
+        padding: 50px; 
         margin: 0 auto;
         display: grid;
         grid-gap: 20px;

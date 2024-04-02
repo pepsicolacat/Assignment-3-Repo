@@ -53,10 +53,6 @@ h2 {
     font-size: clamp(30px, 10vw, 80px);
 }
 
-h1.bio {
-    color: #E1B114;
-}
-
 .video-text {
     position: absolute;
     color: white;
@@ -255,6 +251,40 @@ nav {
     width: 280px;
     height: 190px;
     padding-top: 970px;
+}
+
+#about{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin-left: 130px;
+    width: 70%;
+}
+
+.wongkarwai img{
+    padding-top: 95px;
+    padding-bottom: 95px;
+    width: 600px;
+    height: 600px;
+
+}
+
+.bio-heading {
+    color: #E1B114;
+}
+
+.bio {
+    color: white;
+    font-family: Oswald;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    text-wrap: pretty;
 }
 
 @media screen and (max-width:600px){

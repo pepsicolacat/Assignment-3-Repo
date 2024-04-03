@@ -269,22 +269,47 @@ nav {
 .wongkarwai img{
     padding-top: 95px;
     padding-bottom: 95px;
+    padding-left: 130px;
     width: 600px;
     height: 600px;
+    float: left;
+    margin-right: 53px;
+    
 
 }
 
 .bio-heading {
     color: #E1B114;
+    font-family: "Libre Bodoni";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: left;
+    width: 500px;
+    
 }
 
 .bio {
     color: white;
-    font-family: Oswald;
+    font-family: "Oswald";
     font-size: 24px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     text-wrap: pretty;
+    width: 543px;
+    height: 324px;
+    padding-bottom: 300px;
+   
+}
+
+.awards2 {
+    max-width: 200px;
+    position: relative;
+
+}
+
+.awards2 img{
+    
 }
 
 @media screen and (max-width:600px){

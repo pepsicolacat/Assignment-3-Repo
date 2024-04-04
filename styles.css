@@ -24,7 +24,7 @@ body {
 
 h1.logo {
     color: white;
-    padding-left: 20px;
+    padding-left: 30px;
     color: white;
     font-family: "Libre Bodoni";
     font-size: 32px;
@@ -303,13 +303,25 @@ nav {
 }
 
 .awards2 {
-    max-width: 200px;
+    width: 0;
+    height: 98px;
     position: relative;
-
+    top: 215px;
 }
 
 .awards2 img{
-    
+    height: 100%;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    color: #FFF;
+    font-family: "Libre Bodoni";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    background: linear-gradient(#181818, #101010);
 }
 
 @media screen and (max-width:600px){

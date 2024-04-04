@@ -22,7 +22,7 @@ body {
     background-color: #181818;
 }
 
-h1.logo {
+.logo {
     color: white;
     padding-left: 30px;
     color: white;
@@ -32,17 +32,6 @@ h1.logo {
     font-weight: 400;
 }
 
-/* h2.video {
-    position: absolute;
-    color: #E1B114;
-    text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 100;
-    font-size: clamp(30px, 10vw, 100px);
-} */
-
 h2 {
     color: #E1B114;
     font-family: "Oswald", sans-serif;
@@ -50,7 +39,8 @@ h2 {
     font-weight: 480;
     line-height: 0.1;
     letter-spacing: 15px;
-    font-size: clamp(30px, 10vw, 80px);
+    /*font-size: clamp(30px, 10vw, 80px);*/
+    font-size: 80px;
 }
 
 .video-text {
@@ -121,7 +111,6 @@ video {
     font-weight: 400;
     text-decoration: none;
     color: white;
-
 }
 
 nav {
@@ -153,7 +142,6 @@ nav {
     color: black;
     background-color: white;
     transition-duration: 0.4s;
-    
 }
 
 /* gallery */
@@ -274,8 +262,6 @@ nav {
     height: 600px;
     float: left;
     margin-right: 53px;
-    
-
 }
 
 .bio-heading {
@@ -286,7 +272,6 @@ nav {
     font-weight: 400;
     text-align: left;
     width: 500px;
-    
 }
 
 .bio {
@@ -299,7 +284,6 @@ nav {
     width: 543px;
     height: 324px;
     padding-bottom: 300px;
-   
 }
 
 .awards2 {
@@ -325,6 +309,39 @@ nav {
 }
 
 @media screen and (max-width:600px){
+
+    h2 {
+        display: flex;
+        width: 400px;
+        height: 150px;
+        line-height: 90px;
+        text-align: center;
+        padding-top: 130px;
+    }
+    
+    .video-text {
+        position: absolute;
+        color: white;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 100;
+        line-height: 0.1;
+        font-family: "Libre Bodoni";
+        font-size: 25px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 1;
+        margin-top: 90px;
+    }
+
+    video {
+        width: 100%;
+        height: 900px;
+        object-fit: cover;
+    }
+
     .img-gallery {
         padding: 50px; 
         margin: 0 auto;
@@ -341,4 +358,88 @@ nav {
         object-fit: cover;
         grid-column: span 1;
     }
+    
+    .ITMFL {
+        font-family: "Libre Bodoni";
+        font-size: 32px;
+        text-align: left;
+        width: 200px;
+        height: 190px;
+        padding-top: 340px;
+        margin-left: 20px;
+    }
+    
+    .CKE {
+        font-family: "Roboto";
+        font-size: 32px;
+        text-align: left;
+        margin-left: 20px;
+        width: 200px;
+        height: 190px;
+        padding-top: 785px;
+    }
+    
+    .FA {
+        font-family: "Oswald";
+        font-size: 32px;
+        margin-left: 20px;
+        width: 100px;
+        height: 190px;
+        padding-top: 1230px;
+    }
+
+    #about {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Oswald";
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin-left: 0;
+        width: 100%;
+    }
+    
+    .wongkarwai {
+        position: relative;
+    }
+    
+    .wongkarwai img {
+        padding-top: 0;
+        padding-bottom: 25px;
+        padding-left: 0px;
+        width: 150px;
+        height: 600px;
+        float: none;
+        object-fit: cover;
+        margin-right: 20px;
+    }
+    
+    .bio-heading {
+        color: #E1B114;
+        font-family: "Libre Bodoni";
+        font-size: 45px;
+        text-align: left;
+        width: 300px;
+        position: relative;
+    }
+    
+    .bio {
+        color: white;
+        font-family: "Oswald";
+        font-size: 20px;
+        width: 543px;
+        height: 324px;
+        padding-bottom: 120px;
+    }
+    
+    .awards2 {
+        display: none;
+    }
+    
+    .awards2 img{
+        display: none;
+    }
+    
 }

@@ -1,14 +1,4 @@
-
 @import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
-
-/* making screen responsive and can remove specific stuff with display none */
-/* @media screen and (max-width:600px){
-    .nav-button{
-        max-width:100vw;
-        display:none;
-    }
-
-} */
 
 body::-webkit-scrollbar {
     display: none;
@@ -22,6 +12,7 @@ body {
     background-color: #181818;
 }
 
+/* logo */
 .logo {
     color: white;
     padding-left: 30px;
@@ -32,6 +23,7 @@ body {
     font-weight: 400;
 }
 
+/* landing page */
 h2 {
     color: #E1B114;
     font-family: "Oswald", sans-serif;
@@ -90,7 +82,7 @@ video {
     max-width: 30px;
     position: relative;
     margin: auto;
-    display: flex; 
+    display: flex;
 }
 
 .arrow img {
@@ -99,6 +91,7 @@ video {
     margin-top: 180px;
 }
 
+/* navigation bar */
 .nav-link {
     padding: 0 1rem;
     display: flex;
@@ -119,7 +112,7 @@ nav {
     left: 0;
     width: 100vw;
     height: 70px;
-    background-color: rgba(24, 24, 24,.3);
+    background-color: rgba(24, 24, 24, .3);
     display: flex;
     justify-content: space-between;
     z-index: 100;
@@ -131,7 +124,7 @@ nav {
     align-items: center;
 }
 
-.nav-button a{
+.nav-button a {
     border: 1px solid white;
     width: 60px;
     height: 40px;
@@ -145,7 +138,6 @@ nav {
 }
 
 /* gallery */
-
 .img-gallery {
     padding: 0;
     margin: 0;
@@ -172,6 +164,7 @@ nav {
     grid-column: span 3;
 }
 
+/* films gallery */
 .films {
     padding: 0;
     margin: 0;
@@ -241,7 +234,8 @@ nav {
     padding-top: 970px;
 }
 
-#about{
+/* about section */
+#about {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -254,7 +248,7 @@ nav {
     width: 70%;
 }
 
-.wongkarwai img{
+.wongkarwai img {
     padding-top: 95px;
     padding-bottom: 95px;
     padding-left: 130px;
@@ -293,7 +287,7 @@ nav {
     top: 215px;
 }
 
-.awards2 img{
+.awards2 img {
     height: 100%;
 }
 
@@ -308,7 +302,7 @@ nav {
     background: linear-gradient(#181818, #101010);
 }
 
-@media screen and (max-width:600px){
+@media screen and (max-width:600px) {
 
     h2 {
         display: flex;
@@ -318,7 +312,7 @@ nav {
         text-align: center;
         padding-top: 130px;
     }
-    
+
     .video-text {
         position: absolute;
         color: white;
@@ -343,22 +337,22 @@ nav {
     }
 
     .img-gallery {
-        padding: 50px; 
+        padding: 50px;
         margin: 0 auto;
         display: grid;
         grid-gap: 20px;
         grid-template-columns: repeat(1, 1fr);
         grid-auto-rows: 400px;
     }
-    
-    .img-gallery img{
+
+    .img-gallery img {
         display: block;
         width: 100%;
         height: 100%;
         object-fit: cover;
         grid-column: span 1;
     }
-    
+
     .ITMFL {
         font-family: "Libre Bodoni";
         font-size: 32px;
@@ -368,7 +362,7 @@ nav {
         padding-top: 340px;
         margin-left: 20px;
     }
-    
+
     .CKE {
         font-family: "Roboto";
         font-size: 32px;
@@ -378,7 +372,7 @@ nav {
         height: 190px;
         padding-top: 785px;
     }
-    
+
     .FA {
         font-family: "Oswald";
         font-size: 32px;
@@ -400,11 +394,11 @@ nav {
         margin-left: 0;
         width: 100%;
     }
-    
+
     .wongkarwai {
         position: relative;
     }
-    
+
     .wongkarwai img {
         padding-top: 0;
         padding-bottom: 25px;
@@ -415,7 +409,7 @@ nav {
         object-fit: cover;
         margin-right: 20px;
     }
-    
+
     .bio-heading {
         color: #E1B114;
         font-family: "Libre Bodoni";
@@ -424,7 +418,7 @@ nav {
         width: 300px;
         position: relative;
     }
-    
+
     .bio {
         color: white;
         font-family: "Oswald";
@@ -433,13 +427,13 @@ nav {
         height: 324px;
         padding-bottom: 120px;
     }
-    
+
     .awards2 {
         display: none;
     }
-    
-    .awards2 img{
+
+    .awards2 img {
         display: none;
     }
-    
+
 }
